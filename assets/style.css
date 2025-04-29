@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --primary-color: #002240;
+  --secondary-color: #E8F6EF;
+  --dark-color: #002240;
+  --light-color: #E8F6EF;
+  --color-two: #F6F6F6;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --color-white:#FFFFFF;
+  --color-navbars:#58afe93d;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  color: #333;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 50%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  background-color: #ffffffcc; /* Ganti dengan warna latar belakang yang sesuai */
+  z-index: 1000; /* Nilai z-index yang lebih tinggi agar navbar muncul di atas konten lainnya */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan, bisa disesuaikan */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0; 
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-right: 20px; 
+}
+
+/* showdemo */
+/* .showdemo {
+  height: 400px;
+  background: url(https://data.1freewallpapers.com/download/closeup-view-of-beautiful-yellow-sunflowers-blur-background-flowers.jpg);
+  color: var(--color-two);
+  position: relative;
+  padding: 0;
+  overflow: hidden; /* Menambahkan overflow: hidden untuk memastikan konten tidak keluar dari kotak */
+/* } */
+
+/* .showdemo h1 {
+  font-size: 40px;
+  color: black;
+} */
+
+/* .showdemo p {
+  margin: 20px 0;
+  color: black;
+} */
+
+/* .showdemo .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 10px;
+} */
+
+/* .showdemo-text {
+  animation: slideInFromLeft 1s ease-in;
+} */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* slide otomatis */
+.mySlides {
+  display:none;
+}
+
+/* dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #0077ff;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Docs */
+.profile h3 {
+  margin: 20px 0;
+}
+
+.profile .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.profile nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.profile a:hover {
+  font-weight: bold;
+}
+
+/* Footer */
+.footer .social a {
+  margin: 0 10px;
+}
+
+.fa-linkedin-in:hover {
+  color: blue;
+}
+
+.fa-instagram:hover {
+  color: #B32E87;
+}
+
+.fa-twitter:hover{
+  color: blue;
+}
+
+.fa-facebook:hover{
+  color: blue;
+}
+
+.footer {
+  background-color: #0077ff; /* Choose your desired background color */
+  color: white;
+}
+
+/* Center the content inside the footer */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Add padding to the footer content */
+.py-3 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/* Style the navigation links */
+.nav-footer li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.nav-footer a {
+  color: #fff; /* Link color */
+  text-decoration: none;
+}
+
+/* Contact */
+.card {
+  background-color: #ffffffcc;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  margin-top: 50px;
+}
+
+.contact-container .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.form-control label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-control textarea {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #001529; /* Warna yang lebih gelap saat dihover */
+}
