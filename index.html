@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet"  href="assets/elements.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="assets/js/script.js" defer></script>
     <title>SMKN 9 SEMARANG</title>
-</head>
+    <link rel="shortcut icon" href="images/logosmk.png">
+  </head>
 <body>
     <header>
         <div class="background">
@@ -21,6 +24,17 @@
                           <div class="dropdown">
                           <button class="dropbtn"><a href="index.html">Home</a></button>
                         </div></li>
+                        <li>
+                          <div class="dropdown">
+                            <button class="dropbtn">Profile 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="sejarah.html">Sejarah</a>
+                              <a href="struktur.html">Struktur Organisasi</a>
+                              <a href="prestasi.html">Prestasi</a>
+                            </div>
+                          </div></li>
                         <li>
                             <div class="dropdown">
                               <button class="dropbtn">Bidang Keahlian 
@@ -47,65 +61,18 @@
     <article>
       <section>
         <div class="mySlides">
-          <img src="https://smkn9semarang.sch.id/wp-content/uploads/2012/07/tampak-depan.jpg" alt="satu" style="width: 100%;">
+          <img src="images/smk_9.png" alt="satu" style="width: 100%;">
         </div>
         <div class="mySlides">
-          <img src="https://cdn.kibrispdr.org/data/549/gambar-smk-bisa-smk-hebat-20.jpg" alt="dua" style="width: 100%;">
+          <img src="images/smk_bisa_hebat.png" alt="dua" style="width: 100%;">
         </div>
         <div class="mySlides">
-          <img src="https://smkn9semarang.sch.id/wp-content/uploads/2012/07/tampak-depan.jpg" alt="satu" style="width: 100%;">
+          <img src="images/smk_9.png" alt="satu" style="width: 100%;">
         </div>
         <div class="mySlides">
-          <img src="https://cdn.kibrispdr.org/data/549/gambar-smk-bisa-smk-hebat-20.jpg" alt="dua" style="width: 100%;">
+          <img src="images/smk_bisa_hebat.png" alt="dua" style="width: 100%;">
         </div>
-      </section>
-    </article>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-  let currentSlide = 0;
-
-  // Start automatic slideshow
-  startSlideshow();
-
-  function startSlideshow() {
-    showSlides(currentSlide);
-    setInterval(() => {
-      changeSlide(1);
-    }, 3000); // Change slide every 3 seconds (adjust as needed)
-  }
-
-  function changeSlide(n) {
-    showSlides(currentSlide += n);
-  }
-
-  function showSlides(n) {
-    let slides = document.getElementsByClassName('mySlides');
-    if (n >= slides.length) {
-      currentSlide = 0;
-    }
-    if (n < 0) {
-      currentSlide = slides.length - 1;
-    }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[currentSlide].style.display = "block";
-  }
-});
-
-    </script>
-
-    <!-- <article>
-        <section id="page-one" class="showdemo" >
-            <div class="container grid">
-                <div class="showdemo-text">
-                    <h1>Selamat datang!</h1>
-                    <p>Perkumpulan husbu saya</p>
-                </div>
-            </div>
-        </section>
-    </article> -->
+      </section>        
 
     <aside>
       <article>
@@ -129,7 +96,32 @@
 
                           </ul>
                       </nav>
+                      <br>
+
+                      <div class="wrapper">
+                        <header>
+                          <p class="current-date"></p>
+                          <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                          </div>
+                        </header>
+                        <div class="calendar">
+                          <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                          </ul>
+                          <ul class="days"></ul>
+                        </div>
+                      </div>
                   </div>
+
+
                   <div class="card">
                       <h3>VISI & MISI</h3>
                       <h4>Visi</h4>
@@ -144,7 +136,7 @@
                       <h3>TUJUAN</h3>
                       <h4>Tujuan Pendidikan Kejuruan</h4>
                       <p>Pendidikan Menengah Kejuruan bertujuan untuk meningkatkan kecerdasan, pengetahuan, kepribadian, akhlak mulia, serta keterampilan untuk hidup mandiri dan mengikuti pendidikan lebih lanjut sesuai dengan kejuruannya.</p>
-                      <h4>Tujuan penyelenggaraan pendidikan di SMK Negeri 9 Semarang adalah </h4>
+                      <h4>Tujuan penyelenggaraan pendidikan di SMK Negeri 9 Semarang adalah</h4>
                       <p>1. Mempersiapkan peserta didik agar menjadi sumber daya manusia yang berakhlak mulia, profesional, mandiri, dan kompeten untuk mengisi formasi yang ada di dunia usaha/dunia industri/pemerintah sebagai tenaga kerja tingkat menengah sesuai dengan kompetensi keahliannya.<br>
                         2. Membekali peserta didik agar mampu beradaptasi dan berkompetisi di dunia kerja dan dalam kehidupan bermasyarakat.<br>
                         3. Membekali peserta didik dengan ilmu pengetahuan, teknologi, sosial, budaya, dan seni agar mampu mengembangkan diri untuk berwirausaha dan melanjutkan pendidikan ke jenjang yang lebih tinggi.</p>
@@ -154,6 +146,7 @@
           </section>
       </article>
   </aside>
+  <br>
 
   <article id="page-four">
     <footer class="footer bg-color-one py-3">

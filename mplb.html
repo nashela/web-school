@@ -7,91 +7,59 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet"  href="assets/elements.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>AKL</title>
-</head>
-<body>
-    <header>
-        <div class="background">
-        <div class="navbar">
-            <div class="container flex">
-                <h1 class="logo">SMKN 9 SEMARANG</h1>
-                <nav>
-                    <ul>
-                        <li>
-                          <div class="dropdown">
-                          <button class="dropbtn"><a href="index.html">Home</a></button>
-                        </div></li>
-                        <li>
+    <title>MPLB</title>
+    <link rel="shortcut icon" href="images/logosmk.png">
+  </head>
+  
+  <body>
+      <header>
+          <div class="background">
+          <div class="navbar">
+              <div class="container flex">
+                  <h1 class="logo">SMKN 9 SEMARANG</h1>
+                  <nav>
+                      <ul>
+                          <li>
                             <div class="dropdown">
-                              <button class="dropbtn">Bidang Keahlian 
+                            <button class="dropbtn"><a href="index.html">Home</a></button>
+                          </div></li>
+                          <li>
+                            <div class="dropdown">
+                              <button class="dropbtn">Profile 
                                 <i class="fa fa-caret-down"></i>
                               </button>
                               <div class="dropdown-content">
-                                <a href="pplg.html">Pengembangan Perangkat Lunak dan Gim (PPLG)</a>
-                                <a href="akl.html">Akutansi Keuangan Lembaga (AKL)</a>
-                                <a href="mplb.html">Manajemen Perkantoran & Layanan Bisnis (MPLB)</a>
-                                <a href="pm.html">Pemasaran (PM)</a>
+                                <a href="sejarah.html">Sejarah</a>
+                                <a href="struktur.html">Struktur Organisasi</a>
+                                <a href="prestasi.html">Prestasi</a>
                               </div>
                             </div></li>
-                        <li>
-                          <div class="dropdown">
-                            <button class="dropbtn"><a href="contact.html">Contact</a></button>
-                          </div></li>
-                    </ul>
-                </nav>
-                </div>
-            </div>
-            </div>
-    </header>
-    <article>
-        <section>
-          <div class="mySlides">
-            <img src="https://smkkartikax2jakarta.sch.id/img/administrasi-perkantoran.jpg" alt="satu" style="width: 100%; height: 420px;">
-          </div>
-          <div class="mySlides">
-            <img src="https://cdn.kibrispdr.org/data/549/gambar-smk-bisa-smk-hebat-20.jpg" alt="dua" style="width: 100%;">
-          </div>
-          <div class="mySlides">
-            <img src="https://e1.pxfuel.com/desktop-wallpaper/674/137/desktop-wallpaper-office-administration-and-technology-office-administration.jpg" alt="satu" style="width: 100%; height: 450px;">
-          </div>
-          <div class="mySlides">
-            <img src="https://cdn.kibrispdr.org/data/549/gambar-smk-bisa-smk-hebat-20.jpg" alt="dua" style="width: 100%;">
-          </div>
-        </section>
-      </article>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    let currentSlide = 0;
-  
-    // Start automatic slideshow
-    startSlideshow();
-  
-    function startSlideshow() {
-      showSlides(currentSlide);
-      setInterval(() => {
-        changeSlide(1);
-      }, 3000); // Change slide every 3 seconds (adjust as needed)
-    }
-  
-    function changeSlide(n) {
-      showSlides(currentSlide += n);
-    }
-  
-    function showSlides(n) {
-      let slides = document.getElementsByClassName('mySlides');
-      if (n >= slides.length) {
-        currentSlide = 0;
-      }
-      if (n < 0) {
-        currentSlide = slides.length - 1;
-      }
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[currentSlide].style.display = "block";
-    }
-  });
-      </script>
+                          <li>
+                              <div class="dropdown">
+                                <button class="dropbtn">Bidang Keahlian 
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                  <a href="pplg.html">Pengembangan Perangkat Lunak dan Gim (PPLG)</a>
+                                  <a href="akl.html">Akutansi Keuangan Lembaga (AKL)</a>
+                                  <a href="mplb.html">Manajemen Perkantoran & Layanan Bisnis (MPLB)</a>
+                                  <a href="pm.html">Pemasaran (PM)</a>
+                                </div>
+                              </div></li>
+                          <li>
+                            <div class="dropdown">
+                              <button class="dropbtn"><a href="contact.html">Contact</a></button>
+                            </div></li>
+                      </ul>
+                  </nav>
+                  </div>
+              </div>
+              </div>
+      </header>
+      
+      <section>
+        <img src="images/smk_bisa_hebat.png">
+      </section>
 
     <aside>
         <article>
